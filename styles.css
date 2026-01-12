@@ -356,7 +356,7 @@ QUALITY
 
 .section__description {
     width: 50%;
-    margin: 0 56px;
+    margin-right: 56px;
 }
 
 .quality__img--wrapper {
@@ -365,4 +365,60 @@ QUALITY
     display: flex;
     border: 1px solid rgb(229, 231, 235);
     border-radius: 4px;
+}
+
+/* 
+
+STEPS
+
+*/
+
+.steps__img--wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 56px;
+}
+
+.steps__description {
+    width: 50%;
+}
+
+.step {
+    display: flex;
+    margin-top: 32px;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    margin-right: 32px;
+}
+
+.step__number--one {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.step__title {
+    color: #243e63;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.step__para {
+    font-size: 14px;
+    color: #718096;
+    font-weight: 500;
+    line-height: 2;
+    max-width: 300px;
 }
