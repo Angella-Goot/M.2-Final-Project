@@ -422,3 +422,46 @@ STEPS
     line-height: 2;
     max-width: 300px;
 }
+
+/*
+
+VALUES
+
+*/
+
+.values__description, .values__img--wrapper {
+    width: 50%;
+}
+
+.value
+
+.value {
+    max-width: 260px;
+}
+.values__description {
+    padding: 32px 64px 32px 0;
+}
+
+.value__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.value__name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+.values__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+
+}
+
+.value__para {
+    line-height: 1.8;
+    color: #718096;
+}
