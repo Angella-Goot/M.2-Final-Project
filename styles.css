@@ -824,6 +824,11 @@ TESTIMONIALS
     padding: 16px;
     border-radius: 50%;
     border: none;
+    transition: background 300ms ease;
+}
+
+.testimonial__button:hover {
+    background-color: rgb(218, 215, 215);
 }
 
 .divider {
