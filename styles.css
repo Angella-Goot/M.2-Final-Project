@@ -884,6 +884,7 @@ START
     font-weight: 700;
     color: #f7fafc;
     cursor: pointer;
+    z-index: 2;
 }
 
 .start__btn--1 {
@@ -891,7 +892,6 @@ START
     border: none;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
     transition: background 300ms ease;
-    z-index: 2;
 }
 
 .start__btn--1:hover {
@@ -1304,15 +1304,20 @@ MOBILE RESPONSIVENESS
 
     .features {
         flex-wrap: none;
-        flex-direction: column;
         align-items: center;
         width: 100%;
     }
     
     .feature {
         width: 100%;
-        display: flex;
+    }
+
+    .feature__row {
         justify-content: center;
+    }
+
+    .feature:nth-child(even) {
+        display: block;
     }
 
     #quality .row {
@@ -1338,13 +1343,115 @@ MOBILE RESPONSIVENESS
     }
 
     .steps__description {
-        margin-top: 64px;
+        margin-top: 88px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #pricing .section__title {
         text-align: center;
     }
 }
+
+@media (max-width: 525px) {
+    .row {
+        max-width: 460px;
+    }
+    
+    .header__title {
+        font-size: 24px;
+    }
+
+    .header__email--input {
+        position: relative; 
+        margin-bottom: 12px;      
+    }
+
+    .header__email {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__customers--title {
+        margin-top: 90px;
+    }
+
+    .header__customers {
+        width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row, .row__narrow{
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .header__customers {
+        width: 300px;
+    }
+
+    #features .section__title, #pricing .section__title {
+        font-size: 34px;
+    }
+
+    #features .section__para {
+        margin-top: 8px
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logo {
+        margin: 8px 0 16px 0;
+    }
+
+    .footer__logo--txt {
+        font-size: 16px;
+    }
+
+    .footer__socials {
+        margin: 24px 0;
+    }
+
+    .footer__social--link:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .links__title {
+        font-size: 12px;
+    }
+
+    .links__title:hover {
+        text-decoration: underline;
+        cursor: no-drop;
+    }
+
+    .step__para, .step__title, .feature__para, .feature__title{
+        text-align: left;
+    }
+}
+
+@media (max-width: 430px) {
+    .row {
+        max-width: 360px;
+    }
+
+    .start__btn--1, .start__btn--2 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
 
 
 
